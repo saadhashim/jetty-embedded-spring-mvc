@@ -16,37 +16,44 @@
 	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 
-	<div class="container-fluid">
-		<div class="row text-center">
-			<ul class="nav nav-tabs">
-				<li role="presentation"><a href="/login">Startsida</a></li>
-				<li role="presentation" ><a
-					href="/createcustomer">Skapa ny kund</a></li>
-				<li role="presentation" class="active"><a href="/checkbalance">Kolla saldo</a></li>
-				<li role="presentation"><a href="/transaction">Transaktioner</a></li>
-				<li role="presentation"><a href="/allcustomers">Alla kunder</a></li>
-			</ul>
-			<div class="row">
+<div class="container-fluid">
+	<div class="row text-center">
+		<ul class="nav nav-tabs">
+			<li role="presentation"><a href="/loggedin">Startsida</a></li>
+			<li role="presentation"><a href="/createcustomer">Skapa ny
+					kund</a></li>
+			<li role="presentation" class="active"><a href="/checkbalance">Kolla
+					saldo</a></li>
+			<li role="presentation"><a href="/transaction">Transaktioner</a></li>
+			<li role="presentation"><a href="/allcustomers">Alla kunder</a></li>
+		</ul>
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
 				<h2>Kolla saldo</h2>
-			</div>
-			<div class="bg-danger">
-				<p>${error}</p>
-			</div>
-			<div class="bg-info">
-				<p>${info}</p>
-			</div>
+				<div class="bg-danger">
+					<p>${error}</p>
+				</div>
+				<div class="bg-info">
+					<p>${info}</p>
+				</div>
 
-			<div class="row">
-				<form:form id="checkBalanceForm" method="POST"
-					action="/checkbalance" modelAttribute="customerBean">
-					<form:input path="name" class="form-control input-lg" placeholder="Namn"/>
-					<input type="submit" value="Kolla saldo" class="btn btn-success input-lg" />
-				</form:form>
+				<div class="row">
+					<form:form id="checkBalanceForm" method="POST"
+						action="/checkbalance" modelAttribute="customerBean">
+						<form:input path="name" class="form-control input-lg"
+							placeholder="Namn"/> <br>
+						<input type="submit" value="Kolla saldo"
+							class="btn btn-success input-lg" />
+					</form:form>
+				</div>
 			</div>
+			<div class="col-md-2"></div>
 		</div>
 	</div>
-  </body>
-  
- 
-  
+</div>
+</body>
+
+
+
 </html>

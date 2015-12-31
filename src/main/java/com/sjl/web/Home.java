@@ -20,6 +20,13 @@ public class Home {
 		model.addObject("loginBean", loginBean);
 		return model;
 	}
+	
+	@RequestMapping(value = "/loggedin", method = RequestMethod.GET)
+	public ModelAndView presentLoggedInSite()
+	{
+		ModelAndView model = new ModelAndView("loggedin");
+		return model;
+	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public ModelAndView executeLogin(HttpServletRequest request, HttpServletResponse response,

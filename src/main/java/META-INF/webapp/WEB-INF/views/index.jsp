@@ -4,18 +4,21 @@
 <html>
 <head>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 <!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script
+	src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
-  <body>
-  <div class="container-fluid">
-  <div class="row text-center">
-  <div class="col-md-2"></div>
+<body>
+	<div class="container-fluid">
+		<div class="row text-center">
+			<div class="col-md-2"></div>
 			<div class="col-md-8">
 				<h1>Välkommen till JSTA-Banken</h1>
 				<div class="bg-danger">
@@ -26,10 +29,12 @@
 					<div class="form-group">
 						<form:input path="username" class="form-control input-lg"
 							placeholder="Användarnamn" />
+						<br>
 					</div>
 					<div class="form-group">
 						<form:password path="password" class="form-control input-lg"
 							placeholder="Lösenord" />
+						<br>
 					</div>
 					<div class="form-group">
 						<input type="submit" class="btn btn-success input-lg"
@@ -38,10 +43,10 @@
 				</form:form>
 			</div>
 			<div class="col-md-2"></div>
-</div>
-</div>
-  </body>
-  
- 
-  
+		</div>
+	</div>
+</body>
+
+
+
 </html>

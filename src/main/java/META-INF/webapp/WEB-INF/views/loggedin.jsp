@@ -19,7 +19,7 @@
 	<div class="container-fluid">
 		<div class="row text-center">
 			<ul class="nav nav-tabs">
-				<li role="presentation" class="active"><a href="/login">Startsida</a></li>
+				<li role="presentation" class="active"><a href="/loggedin">Startsida</a></li>
 				<li role="presentation"><a href="/createcustomer">Skapa ny
 						kund</a></li>
 				<li role="presentation"><a href="/checkbalance">Kolla saldo</a></li>
