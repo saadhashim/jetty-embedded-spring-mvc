@@ -44,6 +44,10 @@
 			</div>
 			<div class="col-md-2"></div>
 		</div>
+		<div class="row text-center">
+		<a class="btn btn-warning" href="/valvet" role="button">Till valvet</a>
+		</div>
+
 	</div>
 </body>
 

@@ -3,10 +3,15 @@ package beans;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import javax.validation.constraints.Size;
+
 public class TransactionBean
 {
+		@Size(min=1, max=30)
 		private String name;
+		@Size(min=1, max=30)
 		private String transaction;
+		@Size(min=1, max=30)
 		private String amount;
 		private Map<String,String> transactionTypes; 
 		

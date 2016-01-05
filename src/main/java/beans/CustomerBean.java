@@ -1,9 +1,13 @@
 package beans;
 
+import javax.validation.constraints.Size;
+
 public class CustomerBean
-{
+{		
+		@Size(min=1, max=30)
 		private String name;
 
+		@Size(min=1, max=30)
 		private String balance;
 
 		public CustomerBean() {
