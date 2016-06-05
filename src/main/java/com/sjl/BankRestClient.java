@@ -27,7 +27,16 @@ public class BankRestClient {
 			throws ClientProtocolException, IOException {
 		ClientConfig config = new DefaultClientConfig();
 		Client client = Client.create(config);
-		WebResource service = client.resource(UriBuilder.fromUri("http://localhost:8081/jstabanken-rest-api/").build());
+		
+    	String restServerPortString = (String) System.getProperty("restport");
+    	int portNumber = 8081;
+    	try{
+    		portNumber = Integer.valueOf(restServerPortString);
+    	}catch(Exception e ){
+    		
+    	}
+		
+		WebResource service = client.resource(UriBuilder.fromUri("http://localhost:"+portNumber+"/jstabanken-rest-api/").build());
 		MultivaluedMap<String, String> queryStrs = new MultivaluedMapImpl();
 
 		if (queryStrings != null && queryStrings.length > 0) {

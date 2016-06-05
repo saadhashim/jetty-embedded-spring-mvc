@@ -11,7 +11,14 @@ public class Main
     
     public Main()
     {
-        server = new WebServer(8000);        
+    	String portString = (String) System.getProperty("port");
+    	int portNumber = 8000;
+    	try{
+    		portNumber = Integer.valueOf(portString);
+    	}catch(Exception e ){
+    		
+    	}
+        server = new WebServer(portNumber);        
     }
     
     public void start() throws Exception
