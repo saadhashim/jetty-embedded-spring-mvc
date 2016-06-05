@@ -1,3 +1,2 @@
-A simple example project that sets up an embedded Jetty 8 with Spring-MVC, JSP and JSTL support.
-
-Further description [here](http://steveliles.github.com/).
+Start the servery by:
+java -Dport=9998 -Drestport=9999 -jar target/webapp-1.0-SNAPSHOT.jar 
